@@ -5,14 +5,6 @@ using UnityEngine;
 
 namespace YourVRExperience.Utils
 {
-	/******************************************
-	* 
-	* TextEntry
-	* 
-	* Class used for the app text system and multiple languages
-	* 
-	* @author Esteban Gallardo
-	*/
 	public class TextEntry
 	{
 		private string m_id;
@@ -23,10 +15,6 @@ namespace YourVRExperience.Utils
 			get { return m_id; }
 		}
 
-		// -------------------------------------------
-		/* 
-		 * Constructor
-		 */
 		public TextEntry(string _id, XmlNodeList _textEntryParameters)
 		{
 			m_id = _id;
@@ -44,10 +32,6 @@ namespace YourVRExperience.Utils
 			}
 		}
 
-		// -------------------------------------------
-		/* 
-		 * GetText
-		 */
 		public string GetText(string _language)
 		{
 			if (m_texts[_language] != null)
